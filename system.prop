@@ -1,0 +1,7 @@
+##to fix ##ro.display.series=Samsung S24 
+ro.board.platform=erd9945
+### to fix #sys.usb.controller=10e00000.usb
+### to fix #ro.boot.usbcontroller=10e00000.usb
+ro.boot.dynamic_partitions=true
+### to fix #fbe.metadata.wrappedkey=true
+### to fix #ro.boot.boot_devices=13100000.ufs
