@@ -49,9 +49,9 @@ TARGET_BOARD_PLATFORM := erd9945
 ###TO FIX TARGET_BOARD_PLATFORM_GPU := mali-g78
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/e2s/prebuilt/kernel
-TARGET_PREBUILT_DTB := device/samsung/e2s/prebuilt/dtb
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/e2s/prebuilt/dtbo
+TARGET_PREBUILT_KERNEL := device/samsung/e2s/prebuilt/Image
+TARGET_PREBUILT_DTB := device/samsung/e2s/prebuilt/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := device/samsung/e2s/prebuilt/dtbo.img
 #BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_KERNEL_ARCH := arm64

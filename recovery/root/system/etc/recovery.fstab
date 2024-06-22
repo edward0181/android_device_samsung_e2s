@@ -27,12 +27,12 @@
 
 
 #<src>                                    <mnt_point>    <type>    <mnt_flags and options>    <fs_mgr_flags>
-system	/system	erofs	ro	avb=vbmeta,logical,first_stage_mount
-system	/system	f2fs	ro	avb=vbmeta,logical,first_stage_mount
-system	/system	ext4	ro	avb=vbmeta,logical,first_stage_mount
-vendor	/vendor	erofs	ro	avb,logical,first_stage_mount
-product	/product	erofs	ro	avb,logical,first_stage_mount
-odm	/odm	erofs	ro	avb,logical,first_stage_mount
+system	/system	erofs	ro	logical,first_stage_mount
+system	/system	f2fs	ro	logical,first_stage_mount
+system	/system	ext4	ro	logical,first_stage_mount
+vendor	/vendor	erofs	ro	,logical,first_stage_mount
+product	/product	erofs	ro	logical,first_stage_mount
+odm	/odm	erofs	ro	logical,first_stage_mount
 /dev/block/by-name/boot        /boot           emmc        defaults                  recoveryonly
 /dev/block/by-name/recovery    /recovery       emmc        defaults                  recoveryonly
 /dev/block/by-name/metadata	/metadata	f2fs	noatime,nosuid,nodev,discard,sync,fsync_mode=strict,data_flush	wait,first_stage_mount,formattable,check
@@ -59,11 +59,11 @@ odm	/odm	erofs	ro	avb,logical,first_stage_mount
 /dev/block/by-name/vbmeta_system	/vbmeta_system	emmc	default	recoveryonly
 /dev/block/by-name/vendor_boot	/vendor_boot	emmc	default	recoveryonly
 /dev/block/by-name/vbmeta_samsung	/vbmeta_samsung	emmc	default	recoveryonly
-system_ext	/system_ext	erofs	ro	wait,avb=vbmeta,logical,first_stage_mount
-vendor_dlkm	/vendor_dlkm	erofs	ro	wait,avb=vbmeta,logical,first_stage_mount
-system_dlkm	/system_dlkm	erofs	ro	wait,avb,logical,first_stage_mount
-system_dlkm	/system_dlkm	f2fs	ro	wait,avb,logical,first_stage_mount
-system_dlkm	/system_dlkm	ext4	ro	wait,avb,logical,first_stage_mount
+system_ext	/system_ext	erofs	ro	wait,logical,first_stage_mount
+vendor_dlkm	/vendor_dlkm	erofs	ro	wait,logical,first_stage_mount
+system_dlkm	/system_dlkm	erofs	ro	wait,logical,first_stage_mount
+system_dlkm	/system_dlkm	f2fs	ro	wait,logical,first_stage_mount
+system_dlkm	/system_dlkm	ext4	ro	wait,logical,first_stage_mount
 /dev/block/by-name/init_boot	/init_boot	emmc	default	recoveryonly
 
 
